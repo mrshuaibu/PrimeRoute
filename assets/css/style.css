@@ -16,7 +16,7 @@ html {
     --app-border-radius: 5px;
     --app-font-color1: #000;
     --app-font-color2: #fff;
-    --app-font-hover: #bacadc;
+    --app-font-hover: #c9c9c9;
 }
 
 .container {
@@ -29,22 +29,23 @@ html {
 }
 
 header {
-    background-color: #1E2A33;
+    background-color: #40499A;
+    height: 80px;
 }
 
 body {
-    background-color: #121A23;
+    background-color: #0E1631;
     color: #fff;
     transition: 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/********************/
-/*****  Header  *****/
-/********************/
+/***********************************/
+/* Header*/
+/***********************************/
 
 .menu-icon {
     display: none;
-    line-height: 50px;
+    line-height: 80px;
 }
 
 .bar {
@@ -58,13 +59,13 @@ body {
 
 .nav {
     display: flex;
-    height: 50px;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
 }
 
 .nav-list li {
-    line-height: 50px;
+    line-height: 80px;
     margin-left: 15px;
     font-size: 20px;
 }
@@ -119,19 +120,19 @@ body {
 }
 
 .logo {
-    height: 50px;
-}
+    height: 80px;
+ }
 
 h1 {
-    line-height: 50px;
-    font-size: 25px;
+    line-height: 80px;
+    font-size: 30px;
     font-weight: 600;
     cursor: default;
 }
 
-/********************/
-/******* Main *******/
-/********************/
+/***********************************/
+/* Main*/
+/***********************************/
 
 main {
     height: 100vh;
@@ -154,27 +155,28 @@ main {
 /********************/
 
 footer {
-    background-color: #0D1621;
+    background-color: #140b25;
 }
 
 .height {
-    height: 50px;
+    height: 80px;
     justify-content: space-between;
 }
 
 .copyright {
-    height: 50px;
+    line-height: 80px;
     cursor: default;
+    font-size: 20px;
 }
 
 p {
-    line-height: 50px; 
+    line-height: 80px; 
 }
 
 .social-list li {
-    line-height: 50px;
+    line-height: 80px;
     margin-left: 15px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .social-list li a {
