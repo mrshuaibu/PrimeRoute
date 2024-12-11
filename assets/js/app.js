@@ -2,7 +2,7 @@
 import * as utils from './utils.js';
 mapboxgl.accessToken = 'pk.eyJ1Ijoid2VsbGZjIiwiYSI6ImNscTE5azY3eDAzeGwyaXIycTgyMnM0ZW8ifQ.0Bp9MRAu0DmdRpUI8lnDPg';
 
-const track = utils.select('.btn');
+const track = utils.select('.track-btn');
 const map = new mapboxgl.Map({
   container: 'map',
   center: [-97.17335053110165, 49.94432281545956],
