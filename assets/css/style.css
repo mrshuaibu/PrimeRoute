@@ -205,8 +205,11 @@ main {
     padding: 10px;
     border-radius: 6px;
     background-color: #7f2b32;
-    color: #ebebeb;
     font-weight: 500;
+}
+
+.know-more-button a {
+    color: #ebebeb;
 }
 
 .know-more-button:hover {
