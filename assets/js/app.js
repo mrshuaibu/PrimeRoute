@@ -65,3 +65,11 @@ utils.listen('click', track, () => {
     console.log('Geolocation is not supported by your browser')
   }
 })
+
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+    item.querySelector('.question-container').addEventListener('click', () => {
+        item.classList.toggle('active');
+    });
+});

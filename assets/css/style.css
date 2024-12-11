@@ -371,31 +371,33 @@ main {
 
 .get-pricing {
     padding: 50px 0;
+
 }
 
-.get-pricing .container {
+.get-pricing-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+    background-color: #000;
+    border-radius: 6px;
 }
 
 .get-pricing-img {
     max-width: 50%;
     height: auto;
-    border-radius: 8px;
 }
 
 .get-pricing-img img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
 }
 
 .get-pricing-text {
     flex: 1;
     max-width: 50%;
     text-align: right;
+    padding-right: 30px;
 
     h4 {
         text-align: left;
@@ -447,6 +449,69 @@ main {
 
     .get-pricing-text {
         max-width: 100%;
+    }
+}
+
+/***********************************/
+/* FAQ */
+/***********************************/
+
+.faq {
+    color: #fff;
+    padding: 40px 0;
+}
+
+.faq h3 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.question-container {
+    background-color: red;
+    border-radius: 6px;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faq-question {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.faq-answer {
+    font-size: 16px;
+    margin-top: 10px;
+    padding-left: 20px;
+    line-height: 1.6;
+    display: none;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .faq h3 {
+        font-size: 24px;
+    }
+    
+    .faq-question {
+        font-size: 18px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
     }
 }
 
