@@ -161,7 +161,7 @@ main {
     background-size: cover; 
     background-position: center -10rem;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,17 +217,19 @@ main {
 .intro {
     margin: 0;
     padding: 0;
+    display: grid;
+    place-items: center;
     text-align: center;
     margin-bottom: 40px;
     z-index: 1000;
 
     h2 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .subheading {
         font-size: 20px;
-        width: 700px;
+        width: 500px;
     }
 }
 
@@ -245,7 +247,7 @@ main {
 }
 
 .benefits h3 {
-    font-size: 45px;
+    font-size: 35px;
     margin-bottom: 30px; 
 }
 
@@ -320,8 +322,7 @@ main {
 /***********************************/
 
 .tracking {
-    height: fit-content;
-    min-height: 100svh;
+    height: auto;
     display: grid;
     place-items: center;
     gap: 8rem;
@@ -395,6 +396,27 @@ main {
     text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+    .tracking {
+        gap: 4rem;
+    }
+
+    .tracking-text {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #map {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tracking-text {
+        width: 90%;
+    }
+}
+
 /***********************************/
 /*Get pricing*/
 /***********************************/
@@ -450,23 +472,21 @@ main {
 
 .pricing-button {
     padding: 10px;
-    background-color: #f39c12;
+    background-color: #7f2b32;
     color: #fff;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     font-weight: 500;
-    transition: background-color 0.3s ease;
 }
 
 .pricing-button a {
-    text-decoration: none;
     color: #fff;
-    text-align: right;
 }
 
 .pricing-button:hover {
-    background-color: #e67e22; 
+    background-color: #9c353e; 
+    scale: 1.02;
 }
 
 @media screen and (max-width: 768px) {
