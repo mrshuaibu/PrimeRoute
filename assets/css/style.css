@@ -29,6 +29,9 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: #0E1631;
     color: #fff;
     transition: 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -138,6 +141,11 @@ h1 {
 /***********************************/
 /* Main*/
 /***********************************/
+
+main {
+    flex-grow: 1;
+}
+
 .main-bg {
     background-image: url('../img/bannerimage.jpg');
     background-size: cover; 
@@ -179,13 +187,9 @@ h1 {
 .know-more-button {
     padding: 10px;
     border-radius: 6px;
-    background-color: red;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     font-weight: 500;
-}
-
-.know-more-button:hover {
-    background-color: red;
 }
 
 .intro {
@@ -203,6 +207,90 @@ h1 {
         width: 700px;
     }
 }
+
+/***********************************/
+/* Why choose us */
+/***********************************/
+
+.benefits {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 50px auto;
+    flex-direction: column;
+}
+
+.benefits h3 {
+    font-size: 25px;
+    margin-bottom: 30px; 
+}
+
+.row {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    flex-wrap: wrap; 
+    width: 100%;
+}
+
+.col {
+    flex: 1 1 calc(25% - 20px); 
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 20%);
+    background-color: #000;
+    padding: 20px;
+}
+
+.benefits-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.benefits-sub-heading {
+    font-size: 17px;
+    text-align: center;
+}
+
+.trophy-icon {
+    text-align: center;
+    font-size: 25px;
+    margin: 12px;
+    color: #f39c12 ;
+}
+.bolt-icon {
+    text-align: center;
+    font-size: 25px;
+    margin: 12px;
+    color: #f1c40f;
+}
+.globe-icon {
+    text-align: center;
+    font-size: 25px;
+    margin: 12px;
+    color: #2ecc71;
+}
+.shield-icon {
+    text-align: center;
+    font-size: 25px;
+    margin: 12px;
+    color: #3498db;
+}
+
+@media screen and (max-width: 768px) {
+    .col {
+        flex: 1 1 calc(50% - 10px); 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .col {
+        flex: 1 1 100%; 
+    }
+}
+
 
 /***********************************/
 /*            Tracking             */
