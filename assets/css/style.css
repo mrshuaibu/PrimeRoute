@@ -11,6 +11,11 @@ html {
     font-size: 62.5%;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 :root {
     --app-dark-background: #1a1d28;
     --app-border-radius: 5px;
@@ -32,9 +37,13 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #0E1631;
-    color: #fff;
+    background-color: #001427;
+    color: #ebebeb;
     transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button {
+    transition: all 0.25s ease-in-out;
 }
 
 /***********************************/
@@ -81,10 +90,11 @@ body {
 .nav-list li a{
     text-decoration: none;
     color: var(--app-font-color2);
+    transition: all 0.25s ease-in-out;
 }
 
 .nav-list li a:hover {
-    color: var(--app-font-hover);
+    color: #b7990d;
 }
 
 @media (max-width: 768px) {
@@ -151,7 +161,7 @@ main {
     background-size: cover; 
     background-position: center -10rem;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,52 +169,67 @@ main {
     flex-direction: column;
 }
 
+.main-bg::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0 0 0 / 0.50);
+	z-index: 10;
+}
+
+
 .button-container {
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     gap: 15px;
+    z-index: 1000;
 }
 
 .track-button {
     padding: 10px;
     border-radius: 6px;
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: #9ea3b0;
+    color: #1a1d28;
     font-weight: 500;
 }
 
-.track-button a {
-    text-decoration: none;
-    color: #fff;
-}
-
 .track-button:hover {
-    background-color: #81C784;
+    background-color: #b4b8c2;
+    scale: 1.03;
 }
 
 .know-more-button {
     padding: 10px;
     border-radius: 6px;
-    background-color: #fff;
-    color: #000;
+    background-color: #7f2b32;
+    color: #ebebeb;
     font-weight: 500;
+}
+
+.know-more-button:hover {
+    background-color: #9c353e;
+    scale: 1.03;
 }
 
 .intro {
     margin: 0;
     padding: 0;
+    display: grid;
+    place-items: center;
     text-align: center;
     margin-bottom: 40px;
+    z-index: 1000;
 
     h2 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .subheading {
         font-size: 20px;
-        width: 700px;
+        width: 500px;
     }
 }
 
@@ -222,7 +247,7 @@ main {
 }
 
 .benefits h3 {
-    font-size: 25px;
+    font-size: 35px;
     margin-bottom: 30px; 
 }
 
@@ -297,8 +322,7 @@ main {
 /***********************************/
 
 .tracking {
-    height: fit-content;
-    min-height: 100svh;
+    height: auto;
     display: grid;
     place-items: center;
     gap: 8rem;
@@ -330,6 +354,13 @@ main {
     padding: 10px 15px;
     width: fit-content;
     border-radius: 6px;
+    background-color: #b7990d;
+    color: var(--app-dark-background);
+}
+
+.track-btn:hover {
+    background-color: #a58a0c;
+    scale: 1.02;
 }
 
 #map {
@@ -363,6 +394,27 @@ main {
     max-width: 200px;
     color: black;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .tracking {
+        gap: 4rem;
+    }
+
+    .tracking-text {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #map {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tracking-text {
+        width: 90%;
+    }
 }
 
 /***********************************/
@@ -422,23 +474,21 @@ main {
 
 .pricing-button {
     padding: 10px;
-    background-color: #f39c12;
+    background-color: #7f2b32;
     color: #fff;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     font-weight: 500;
-    transition: background-color 0.3s ease;
 }
 
 .pricing-button a {
-    text-decoration: none;
     color: #fff;
-    text-align: right;
 }
 
 .pricing-button:hover {
-    background-color: #e67e22; 
+    background-color: #9c353e; 
+    scale: 1.02;
 }
 
 @media screen and (max-width: 768px) {
