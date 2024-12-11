@@ -147,7 +147,34 @@ main {
 #map {
     width: 600px;
     height: 300px;
+}
 
+#office-marker {
+    background-image: url('../img/building.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#package-marker {
+    background-image: url('../img/package.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mapboxgl-ctrl-bottom-right, .mapboxgl-ctrl-bottom-left {
+    display: none;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+    color: black;
+    text-align: center;
 }
 
 /********************/

@@ -1,27 +1,53 @@
 'use strict';
-
+import * as utils from './utils.js';
 mapboxgl.accessToken = 'pk.eyJ1Ijoid2VsbGZjIiwiYSI6ImNscTE5azY3eDAzeGwyaXIycTgyMnM0ZW8ifQ.0Bp9MRAu0DmdRpUI8lnDPg';
 
-const track = document.querySelector('.btn');
+const track = utils.select('.btn');
 const map = new mapboxgl.Map({
-  container: 'map', // container ID
-	style: 'mapbox://styles/mapbox/standard', // style URL
-	center: [-97.1727973087, 49.9435258223], // starting position [lng, lat]
-	zoom: 12, // starting zoom
+  container: 'map',
+  center: [-97.17335053110165, 49.94432281545956],
+  style: 'mapbox://styles/mapbox/streets-v12',
+  zoom: 8
 });
 
-const headOffice = new mapboxgl.Marker()
-  .setLngLat([-97.1727973087, 49.9435258223])
+map.addControl(new mapboxgl.NavigationControl());
+
+map.on('load', () => {
+  map.flyTo({
+    center: [-97.17335053110165, 49.94432281545956],
+    zoom: 14,
+    pitch: 50,
+    essential: true
+  });
+});
+
+
+// setting the popup
+const popup = new mapboxgl.Popup({ offset: 25 }).setText(
+  'PrimeRoute Head Office, come visit!'
+);
+
+
+const officeMarker = document.createElement('div');
+officeMarker.id = 'office-marker';
+const packageMarker = document.createElement('div');
+packageMarker.id = 'package-marker';
+
+    // create the marker
+new mapboxgl.Marker(officeMarker)
+  .setLngLat([-97.17335053110165, 49.94432281545956])
+  .setPopup(popup)
   .addTo(map);
 
 function getLocation(position) {
   let { latitude, longitude } = position.coords;
-  const location = new mapboxgl.Marker()
+  const location = new mapboxgl.Marker(packageMarker)
     .setLngLat([longitude, latitude])
     .addTo(map);
   map.flyTo({
     center: location.getLngLat(),
     zoom: 15,
+    pitch: 0,
     essential: true
   })
 }
@@ -31,7 +57,8 @@ function errorHandler() {
 }
 
 const accuracy = { enableHighAccuracy: true };
-track.addEventListener('click', () => {
+
+utils.listen('click', track, () => {
   if ('geolocation' in navigator) {
     navigator.geolocation.getCurrentPosition(getLocation, errorHandler, accuracy);
   } else {
