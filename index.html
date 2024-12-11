@@ -20,7 +20,7 @@
     </head>
     <body>
         <main>
-            <div class="nav-container">
+            <header class="nav-container">
                 <div class="flex container nav">
                     <div class="logo">
                         <h1> PrimeRoute </h1>
@@ -44,7 +44,7 @@
                         <span class="bar"></span>
                     </div>
                 </div>
-            </div>
+            </header>
             <section class="main-bg">
                 <div class="intro">
                     <h2>Efficient Logistics at Your Fingertips</h2>
@@ -52,19 +52,22 @@
                         From doorstep to destination, PrimeRoute ensures fast, 
                         reliable, and secure delivery services across the world.
                     </p>
-                    <!-- <h2>Where’s My Package?</h2>
-                    <p>
-                        Get real-time updates on your package's location and 
-                        delivery progress.
-                    </p> -->
                 </div>
                 <div class="button-container">
-                    <button  class="track-button"> <a href="#track">Track Now</a></button>
+                    <button  class="track-button"> <a href="#tracking">Track Now</a></button>
                     <button class="know-more-button">Know More</button>
                 </div>
             </section>
-            <section>
-                <button class="btn">Track Parcel</button>
+            <section id="tracking" class="tracking">
+                <div class="tracking-text">
+                    <h2>Find your Parcel</h2>
+                        <p>
+                            Get real-time updates on your parcel's location and
+                            delivery progress, regardless of where it is in
+                            the world.
+                        </p>
+                        <button class="track-btn">Track now</button>
+                </div>
                 <div id="map"></div>
             </section>
         </main>  
