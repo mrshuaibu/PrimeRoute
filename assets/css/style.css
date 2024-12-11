@@ -330,6 +330,92 @@ main {
 }
 
 /***********************************/
+/*Get pricing*/
+/***********************************/
+
+.get-pricing {
+    padding: 50px 0;
+}
+
+.get-pricing .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.get-pricing-img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.get-pricing-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.get-pricing-text {
+    flex: 1;
+    max-width: 50%;
+    text-align: right;
+
+    h4 {
+        text-align: left;
+    }
+
+    p {
+        text-align: left;
+    }
+}
+
+.get-pricing-text h4 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.get-pricing-text p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.pricing-button {
+    padding: 10px;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-button a {
+    text-decoration: none;
+    color: #fff;
+    text-align: right;
+}
+
+.pricing-button:hover {
+    background-color: #e67e22; 
+}
+
+@media screen and (max-width: 768px) {
+    .get-pricing .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .get-pricing-text {
+        max-width: 100%;
+    }
+}
+
+
+/***********************************/
 /* Footer*/
 /***********************************/
 
