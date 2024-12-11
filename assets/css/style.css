@@ -191,30 +191,33 @@ main {
 .track-button {
     padding: 10px;
     border-radius: 6px;
-    background-color: #9ea3b0;
-    color: #1a1d28;
+    background-color: #7f2b32;
     font-weight: 500;
 }
 
+.track-button a {
+    color: #ebebeb;
+}
+
 .track-button:hover {
-    background-color: #b4b8c2;
+    background-color: #9c353e;
     scale: 1.03;
 }
 
 .know-more-button {
     padding: 10px;
+    background-color: #9ea3b0;
     border-radius: 6px;
-    background-color: #7f2b32;
     font-weight: 500;
 }
 
 .know-more-button a {
-    color: #ebebeb;
+    color: #1a1d28;
 }
 
 .know-more-button:hover {
-    background-color: #9c353e;
     scale: 1.03;
+    background-color: #b4b8c2;
 }
 
 .intro {
@@ -357,12 +360,12 @@ main {
     padding: 10px 15px;
     width: fit-content;
     border-radius: 6px;
-    background-color: #b7990d;
-    color: var(--app-dark-background);
+    background-color: #7f2b32;
+    color: #ebebeb;
 }
 
 .track-btn:hover {
-    background-color: #a58a0c;
+    background-color: #9c353e;
     scale: 1.02;
 }
 
@@ -478,7 +481,7 @@ main {
 
 .pricing-button {
     padding: 10px;
-    background-color: #7f2b32;
+    background-color: #b7990d;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -486,12 +489,9 @@ main {
     font-weight: 500;
 }
 
-.pricing-button a {
-    color: #fff;
-}
 
 .pricing-button:hover {
-    background-color: #9c353e; 
+    background-color: #a58a0c;
     scale: 1.02;
 }
 
