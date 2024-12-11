@@ -141,7 +141,7 @@ h1 {
 .main-bg {
     background-image: url('../img/bannerimage.jpg');
     background-size: cover; 
-    background-position: center;
+    background-position: center -10rem;
     background-repeat: no-repeat;
     height: 60vh;
     display: flex;
