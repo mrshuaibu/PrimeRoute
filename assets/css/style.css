@@ -161,7 +161,7 @@ main {
     background-size: cover; 
     background-position: center -10rem;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,7 +235,7 @@ main {
 
     .subheading {
         font-size: 20px;
-        width: 500px;
+        max-width: 700px;
     }
 }
 
@@ -440,6 +440,7 @@ main {
     gap: 30px;
     background-color: rgb(158 163 176 / 20%);
     border-radius: 6px;
+    flex-wrap: wrap;
 }
 
 .get-pricing-img {
@@ -457,8 +458,8 @@ main {
 .get-pricing-text {
     flex: 1;
     max-width: 50%;
-    text-align: center;
-    padding-right: 30px;
+    text-align: right;
+    padding: 30px;
 
     h4 {
         text-align: left;
@@ -498,13 +499,23 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-    .get-pricing .container {
+    .get-pricing .get-pricing-box {
         flex-direction: column;
         text-align: center;
     }
 
     .get-pricing-text {
         max-width: 100%;
+    }
+
+    .get-pricing-img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .get-pricing-img img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -514,7 +525,7 @@ main {
 
 .faq {
     color: #fff;
-    padding: 40px 0;
+    padding: 10px;
 }
 
 .faq-wrapper {
