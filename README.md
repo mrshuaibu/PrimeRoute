@@ -35,7 +35,7 @@ users current location as a 'parcel'.
 
 ### Technologies used
 <p float="left">
-  <img src="./assets/img/mapbox.png" height="30" width="130" style="background-color:white">
+  <img src="./assets/img/mapbox.png" height="30" width="130">
   <img
   src="https://img.shields.io/badge/javascript-grey?style=for-the-badge&logo=javascript"
   />
