@@ -458,7 +458,7 @@ main {
 .get-pricing-text {
     flex: 1;
     max-width: 50%;
-    text-align: right;
+    text-align: center;
     padding: 30px;
 
     h4 {
@@ -526,6 +526,7 @@ main {
 .faq {
     color: #fff;
     padding: 10px;
+    margin: 50px auto;
 }
 
 .faq-wrapper {
@@ -598,6 +599,11 @@ main {
 
     .faq-answer {
         font-size: 14px;
+    }
+
+    .faq-item {
+        margin-bottom: 20px;
+        width: 40rem;
     }
 }
 
