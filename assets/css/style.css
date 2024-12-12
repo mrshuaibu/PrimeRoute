@@ -451,7 +451,7 @@ main {
 .get-pricing-img img {
     max-width: 100%;
     height: auto;
-    border-radius: 6px 0 0 6px;
+    border-radius: 6px;
 }
 
 .get-pricing-text {
