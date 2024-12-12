@@ -224,6 +224,7 @@ main {
     place-items: center;
     text-align: center;
     z-index: 1000;
+    margin-bottom: 20px;
 
     h2 {
         font-size: 40px;
@@ -237,7 +238,7 @@ main {
 
 @media screen and (max-width: 768px) {
     .main-bg {
-        height: 80vh;
+        height: 100vh;
         background-position: center ;
     }
     
