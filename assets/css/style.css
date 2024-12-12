@@ -161,7 +161,7 @@ main {
     background-size: cover; 
     background-position: center -10rem;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -437,7 +437,7 @@ main {
 
 .get-pricing {
     padding: 50px 0;
-
+    margin: 40px auto;
 }
 
 .get-pricing-box {
@@ -465,16 +465,8 @@ main {
 .get-pricing-text {
     flex: 1;
     max-width: 50%;
-    text-align: right;
+    text-align: center;
     padding: 30px;
-
-    h4 {
-        text-align: left;
-    }
-
-    p {
-        text-align: left;
-    }
 }
 
 .get-pricing-text h4 {
@@ -538,6 +530,8 @@ main {
 .faq-wrapper {
     display: grid;
     place-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .faq h3 {
