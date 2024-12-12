@@ -37,7 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #001427;
+    background-color: rgb(33 42 55);
     color: #ebebeb;
     transition: 0.3s ease-in-out, color 0.3s ease-in-out;
 }
@@ -160,7 +160,7 @@ main {
     background-image: url('../img/bannerimage.jpg');
     background-size: cover; 
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,7 +284,7 @@ main {
     flex: 1 1 calc(25% - 20px); 
     border-radius: 5px;
     box-shadow: 0px 0px 7px rgb(158 163 176 / 20%);
-    background-color: #000;
+    background-color: #161618;
     padding: 20px;
 }
 
@@ -342,11 +342,18 @@ main {
 /*            Tracking             */
 /***********************************/
 
+.tracking-wrapper {
+    background-color: rgb(22 22 24 / 40%);
+    /* background-color: rgb(158 163 176 / 50%); */
+    padding: 50px 0;
+}
+
 .tracking {
     height: auto;
     display: grid;
     place-items: center;
     gap: 8rem;
+
 }
 
 .tracking-text {
@@ -444,7 +451,7 @@ main {
 
 .get-pricing {
     padding: 50px 0;
-
+    margin: 40px auto;
 }
 
 .get-pricing-box {
@@ -474,14 +481,6 @@ main {
     max-width: 50%;
     text-align: center;
     padding: 30px;
-
-    h4 {
-        text-align: left;
-    }
-
-    p {
-        text-align: left;
-    }
 }
 
 .get-pricing-text h4 {
@@ -546,6 +545,8 @@ main {
 .faq-wrapper {
     display: grid;
     place-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .faq h3 {
