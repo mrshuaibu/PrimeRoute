@@ -515,6 +515,11 @@ main {
     padding: 40px 0;
 }
 
+.faq-wrapper {
+    display: grid;
+    place-items: center;
+}
+
 .faq h3 {
     font-size: 28px;
     font-weight: 600;
@@ -522,8 +527,23 @@ main {
     margin-bottom: 30px;
 }
 
+.inner-wrapper {
+    background-color: rgb(158 163 176 / 20%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 6px;
+}
+
 .faq-item {
     margin-bottom: 20px;
+    width: 60rem;
+}
+
+.faq-item:last-child {
+    margin-bottom: 0;
 }
 
 .question-container {
@@ -531,7 +551,6 @@ main {
     border-radius: 6px;
     padding: 10px;
     align-items: center;
-    margin-bottom: 15px;
     justify-content: space-between;
     cursor: pointer;
 }
