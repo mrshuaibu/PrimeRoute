@@ -568,6 +568,10 @@ main {
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+
+    h4 {
+        padding-right: 20px;
+    }
 }
 
 .faq-question {
@@ -604,7 +608,7 @@ main {
 
     .faq-item {
         margin-bottom: 20px;
-        width: 40rem;
+        width: 100%;
     }
 }
 
